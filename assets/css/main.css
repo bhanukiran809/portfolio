@@ -1286,3 +1286,9 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.tech-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 2rem; /* size of icons */
+}
