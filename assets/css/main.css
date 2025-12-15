@@ -688,7 +688,7 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
+/* .skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -719,7 +719,7 @@ section,
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); */
 }
 
 /*--------------------------------------------------------------
@@ -1291,4 +1291,50 @@ section,
   display: flex;
   gap: 15px;
   font-size: 2rem; /* size of icons */
+}
+/* ==========================
+   Skills Section
+========================== */
+
+.skills .skill-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.skills .skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.skills .skill-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #173b6c;
+}
+
+.skills .skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills .skill-box ul li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills .skill-box ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #149ddd;
+  font-weight: bold;
 }
